@@ -1,4 +1,4 @@
-import { BasicCharacterControllerInput } from "@/shiki/controllers/character/BasicCharacterControllerInput";
+import { BasicCharacterControllerInput } from "../../controllers/character/BasicCharacterControllerInput";
 import { AbsState } from "./AbsState";
 
 type StateEnum = number;

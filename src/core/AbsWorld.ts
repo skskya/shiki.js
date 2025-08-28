@@ -1,5 +1,5 @@
 import Context from './Context';
-import * as THREE from 'Three';
+import * as THREE from 'three';
 import { Module } from './Engine';
 
 export abstract class AbsWorld implements Module {

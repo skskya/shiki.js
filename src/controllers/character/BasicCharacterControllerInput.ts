@@ -1,4 +1,4 @@
-import { KeyBoard } from "@/shiki/components/Keyboard";
+import { KeyBoard } from "../../components/Keyboard";
 
 export class BasicCharacterControllerInput {
   

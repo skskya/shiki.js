@@ -1,4 +1,4 @@
-import { CubeTexture, CubeTextureLoader, EventDispatcher, Loader, TextureLoader, AudioLoader} from 'Three';
+import { CubeTexture, CubeTextureLoader, EventDispatcher, Loader, TextureLoader, AudioLoader} from 'three';
 import { FontLoader, GLTFLoader, DRACOLoader } from 'three-stdlib';
 
 export type ResourceType = 'cubeTexture' | 'texture' | 'gltfModel' | 'font' | 'audio';

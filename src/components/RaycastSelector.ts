@@ -1,4 +1,4 @@
-import * as THREE from 'Three';
+import * as THREE from 'three';
 import Context from '../core/Context';
 import { Mouse } from './Mouse';
 

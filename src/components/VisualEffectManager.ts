@@ -1,6 +1,6 @@
 import Context from '../core/Context';
 import { Module } from '../core/Engine';
-import * as THREE from 'Three';
+import * as THREE from 'three';
 
 // VFX视觉特效（Visual Special Effects)
 export abstract class AbsVisualEffect {

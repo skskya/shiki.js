@@ -1,4 +1,4 @@
-import * as THREE from 'Three';
+import * as THREE from 'three';
 // 开启阴影
 const enableShadow = (renderer: THREE.WebGLRenderer) => {
   renderer.shadowMap.enabled = true;
@@ -7,14 +7,7 @@ const enableShadow = (renderer: THREE.WebGLRenderer) => {
 
 // 开启sRGB颜色空间
 const enableSRGBSpaceColor = (renderer: THREE.WebGLRenderer) => {
-  if (renderer.outputColorSpace) {
     renderer.outputColorSpace = THREE.SRGBColorSpace;
-  } else {
-    // Since the version r152 of Three.js encoding has been replaced by colorSpace
-    // and default value LinearSRGBColorSpace has been replaced by SRGBColorSpace
-    // @ts-ignore
-    renderer.outputEncoding = THREE.sRGBEncoding;
-  }
 };
 
 // 开启真实渲染

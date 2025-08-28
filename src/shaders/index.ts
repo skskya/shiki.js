@@ -3,7 +3,7 @@
  * 在项目中注册着色器片段 registerShaderChunks('chunkname1','chunkname2')
  * 可通过 include <chunkKey> 引入
  */
-import { ShaderChunk } from 'Three';
+import { ShaderChunk } from 'three';
 import random2D from './customFunctionshaderChunk/random2D_function';
 import linearRemap from './customFunctionshaderChunk/linearRemap_function';
 

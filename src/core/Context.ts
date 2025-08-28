@@ -1,6 +1,6 @@
-import * as THREE from "Three";
+import * as THREE from "three";
 import { EffectComposer } from "three-stdlib";
-import { Clock } from "../../shiki.js/core/Clock";
+import { Clock } from "../components/Clock";
 import { AssetManager } from "../components/AssetManager";
 import { VisualEffectManager } from "../components/VisualEffectManager";
 import { MaterialStore } from "../components/MaterialStore";

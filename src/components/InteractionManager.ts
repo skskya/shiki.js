@@ -1,4 +1,4 @@
-import * as THREE from 'Three';
+import * as THREE from 'three';
 import { Module } from '../core/Engine';
 
 export type PointerEvents = 'click' | 'pointermove' | 'mouseover' | 'mouseout';

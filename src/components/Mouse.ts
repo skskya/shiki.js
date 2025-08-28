@@ -1,4 +1,4 @@
-import * as THREE from 'Three';
+import * as THREE from 'three';
 
 export class Mouse {
   // mouse在视口的坐标 [原点在左上角]

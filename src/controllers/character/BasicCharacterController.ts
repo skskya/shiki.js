@@ -1,9 +1,9 @@
-import * as THREE from "Three";
+import * as THREE from "three";
 import { CharacterFSM } from "./CharacterFSM";
 import { StateEnum,clipMap } from "./states/mapping";
 import { BasicCharacterControllerProxy } from "./BasicCharacterControllerProxy";
 import { BasicCharacterControllerInput } from "./BasicCharacterControllerInput";
-import { KeyBoard } from "@/shiki/components/Keyboard";
+import { KeyBoard } from "../../components/Keyboard";
 
 export interface Animation {
   mixer: THREE.AnimationMixer;

@@ -1,4 +1,4 @@
-import { AbsState } from "@/shiki/components/fsm/AbsState";
+import { AbsState } from "../../../components/fsm/AbsState";
 import { StateEnum } from "./mapping";
 import { BasicCharacterControllerInput } from "../BasicCharacterControllerInput";
 import { CharacterFSM } from "../CharacterFSM";
