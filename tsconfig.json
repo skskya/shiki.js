@@ -1,0 +1,81 @@
+{
+  "compilerOptions": {
+    /* 输出设置 */
+    "outDir": "./build",          // 输出目录（构建后的 JS、d.ts 文件）
+    "rootDir": "./src",          // 源码根目录，保持 src -> dist 的结构一致
+    "declaration": true,         // 生成 .d.ts 类型声明文件
+    // "declarationMap": true,      // 为类型声明文件生成 sourcemap
+    // "sourceMap": true,           // 为 JS 输出生成 sourcemap，方便调试
+    // "inlineSources": true,       // 将源码内容嵌入 sourcemap 中，调试更方便
+
+    /* 编译目标 */
+    "target": "ESNext",          // 生成的 JS 使用最新语法（如 ES2022）
+    "module": "ESNext",          // 使用 ES 模块格式（import/export）
+    "moduleResolution": "node",  // 模块查找策略（适配 node_modules）
+    "lib": ["DOM", "ESNext", "DOM.Iterable"], // 包含的类型库（浏览器 + ES 标准）
+
+    /* 严格模式 */
+    "strict": true,              // 开启所有严格检查（推荐）
+    "noImplicitReturns": true,   // 函数必须有明确的返回值
+    "noFallthroughCasesInSwitch": true, // switch case 不允许掉落（漏写 break）
+
+    /* 模块兼容性 */
+    "esModuleInterop": true,     // 支持从 CommonJS 模块中默认导入
+    "forceConsistentCasingInFileNames": true, // 强制文件名大小写一致（跨平台友好）
+    "skipLibCheck": true,        // 跳过第三方库的类型检查，加快构建速度
+
+    /* 编译优化 */
+    "downlevelIteration": true   // 支持 for-of / 展开操作符在低版本 JS 中的行为
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],            // 编译包含的目录
+  // "exclude": ["node_modules", "dist"] // 编译排除的目录
+  // "files": []                // 精确指定要编译的文件列表；会覆盖 include/exclude；适用于测试、只编译单个文件，或者顶层 tsconfig 中配合 references 使用。
+  // "references": [            // 引用子模块
+  //   { "path": "./tsconfig.app.json" },
+  //   { "path": "./tsconfig.node.json" }
+  // ]
+  
+    /* 基础增量构建 */
+  // "incremental": true,             // 开启增量编译（提高构建速度，适合大型项目）
+  // "tsBuildInfoFile": "./",         // 存储增量构建信息的文件路径
+
+  /* 允许编译 JS / JSX 文件 */
+  // "allowJs": true,                 // 允许编译 .js 文件
+  // "checkJs": true,                 // 检查 .js 文件中的类型错误
+  // "jsx": "preserve",               // 控制 JSX 编译方式（适合 React 项目）
+
+  /* 模块路径解析相关 */
+  // "baseUrl": "./",                 // 设置模块导入的基础路径（配合 paths 使用）
+  // "paths": { "@/*": ["src/*"] },   // 设置模块别名映射（示例：@/utils => src/utils）
+  // "typeRoots": ["./types"],        // 自定义类型定义文件的路径
+  // "types": ["three"],              // 指定要包含的类型声明模块
+
+  /* 更细致的严格检查 */
+  // "noImplicitAny": true,           // 不允许隐式 any 类型
+  // "strictNullChecks": true,        // 开启严格的 null/undefined 检查
+  // "strictFunctionTypes": true,     // 函数参数是否严格兼容
+  // "strictBindCallApply": true,     // 严格检查 bind、call、apply 调用
+  // "strictPropertyInitialization": true, // 类属性初始化必须明确
+  // "noImplicitThis": true,          // 禁止 this 推断为 any
+  // "alwaysStrict": true,            // 所有文件默认加上 "use strict"
+
+  /* 其他行为检查 */
+  // "noUnusedLocals": true,          // 检查未使用的本地变量
+  // "noUnusedParameters": true,      // 检查未使用的函数参数
+
+  /* 装饰器相关（实验性）*/
+  // "experimentalDecorators": true,  // 启用装饰器语法（如 @Injectable）
+  // "emitDecoratorMetadata": true,   // 在运行时生成类型元数据（需配合 reflect-metadata）
+
+  /* 源码映射相关 */
+  // "inlineSourceMap": true,         // 将 sourceMap 嵌入到输出文件中（适合调试）
+  // "inlineSources": true,           // 将源码嵌入到 sourceMap 文件
+  // "sourceRoot": "",                // 告诉调试器源码位置
+  // "mapRoot": "",                   // 告诉调试器 map 文件位置
+
+  /* 模块系统互操作 */
+  // "allowSyntheticDefaultImports": true, // 允许默认导入没有默认导出的模块（只影响类型检查）
+  // "preserveSymlinks": true,       // 保留符号链接路径
+  // "allowUmdGlobalAccess": true,   // 允许访问全局 UMD 模块
+
+}
